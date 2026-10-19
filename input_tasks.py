@@ -12,3 +12,17 @@ print("##########")
 print(f"#  {eye_char}  {eye_char}  #")
 print("#  ----  #")
 print("##########")
+
+#Ask user to enter his name, age, height, weight
+print("What is your name ?")
+name = input()
+print("How old are you ? ")
+age = int(input())
+print("How tall are you ? ")
+height = float(input())
+print("How much do you weigh? ")
+weight = float(input())
+#BMI calculation formula
+BMI=weight/height**2
+#Output
+print(f"{name} you are {age} years old, and your BMI is {BMI:.2f} ")
