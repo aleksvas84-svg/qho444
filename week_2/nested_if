@@ -1,19 +1,47 @@
+# Task1. nested_if statement 
 # Program to classify books based on their cover type and binding
 
-# Ask the user for the cover type
-cover_type = input("What type of cover does the book have?\n")
+# # Ask the user for the cover type
+# cover_type = input("What type of cover does the book have?\n")
 
-# Outer if-statement to check the cover type
-if cover_type == "soft":
-    # Inner (nested) if-statement for soft covers
-    is_perfect = input("Is the book perfect-bound?\n")
+# # Outer if-statement to check the cover type
+# if cover_type == "soft":
+#     # Nested if-statement for soft covers
+#     is_perfect = input("Is the book perfect-bound?\n")
     
-    if is_perfect == "yes":
-        print("\nSoft cover, perfect bound books are very popular!")
+#     if is_perfect == "yes":
+#         print("\nSoft cover, perfect bound books are very popular!")
+#     else:
+#         print("\nSoft covers with coils or stitches are great for short books")
+
+# # Handle hard covers
+# elif cover_type == "hard":
+#     print("\nBooks with hard covers can be more expensive!")
+
+# Task2. multiple nested_if statements
+# Ask user with a question message
+place = input("Where should I look ?\n")
+# Check the place entered
+if place == "in the bedroom":
+    location=input("Where in the bedroom should I look?\n")
+    # Check the location entered with if...else statements
+    if location == "under the bed":
+        print("Found some shoes but no phone!")
     else:
-        print("\nSoft covers with coils or stitches are great for short books")
+        print("Found some mess but no phone !")
+    
+elif place =="in the bathroom":
+    location=input("Where in the bathroom should I look ?\n")
+    if location == "in the bathhub":
+        print("Found a rubber duck but no phone!")
+    else:
+        print("Found bathroom stuff but no phone!")
 
-# Handle hard covers
-elif cover_type == "hard":
-    print("\nBooks with hard covers can be more expensive!")
-
+elif place == "in the living room":
+    location=input("Where in the living room should I look ?\n")
+    if location == "on the table":
+        print("Yes, I found my phone!")
+    else:
+        print("Found some stuff but no phone!")
+else:
+    print("I do not know where that is but I will keep looking.")
