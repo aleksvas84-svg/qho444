@@ -62,10 +62,27 @@
 #     print("Invalid direction! Please choose up, down, left, or right.")
 
 #Task3.
-# Ask user to enter the whole number
-number = int(input("Please enter a whole number:\n"))
-# Check if number is even or odd
-if number % 2 == 0:
-    print("The number is even.")
+# # Ask user to enter the whole number
+# number = int(input("Please enter a whole number:\n"))
+# # Check if number is even or odd
+# if number % 2 == 0:
+#     print("The number is even.")
+# else:
+#     print("The number is odd.")
+
+
+# Prompt for and read the first number
+first_number = float(input("Please enter the first number.\n"))
+
+# Prompt for and read the second number
+second_number = float(input("Please enter the second number.\n"))
+
+print()  # Prints a blank line to match the example output
+
+# Compare the numbers and display the result
+if first_number < second_number:
+    print("The first number is the smallest!")
+elif second_number < first_number:
+    print("The second number is the smallest!")
 else:
-    print("The number is odd.") 
+    print("Both are equal!")
