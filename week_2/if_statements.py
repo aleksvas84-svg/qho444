@@ -71,18 +71,34 @@
 #     print("The number is odd.")
 
 
-# Prompt for and read the first number
-first_number = float(input("Please enter the first number.\n"))
+#Task4.
+# Ask user to enter first whole number
+num1 = int(input("Please enter the first whole number:\n"))
 
-# Prompt for and read the second number
-second_number = float(input("Please enter the second number.\n"))
+# Ask user to enter second whole number
+num2 = int(input("Please enter the second whole number:\n"))
 
-print()  # Prints a blank line to match the example output
+# Ask user to enter third whole number
+num3 = int(input("Please enter the third whole number:\n"))
 
-# Compare the numbers and display the result
-if first_number < second_number:
-    print("The first number is the smallest!")
-elif second_number < first_number:
-    print("The second number is the smallest!")
+# Provide the counters
+even_count = 0
+odd_count = 0
+# Check first number
+if num1 % 2 == 0:
+    even_count += 1
 else:
-    print("Both are equal!")
+    odd_count += 1
+# Check second number
+if num2 % 2 == 0:
+    even_count += 1
+else:
+    odd_count += 1
+# Check third number
+if num3 % 2 == 0:
+    even_count += 1
+else:
+    odd_count += 1
+# Display final result
+
+print(f"There are {even_count} even numbers and {odd_count} odd numbers.")
