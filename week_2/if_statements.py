@@ -46,17 +46,26 @@
 
 
 #Task2.
-# Prompt the user for the direction
-direction = input("Towards which direction should I go (up, down, left or right)?\n")
+# Ask the user for the direction
+# direction = input("Towards which direction should I go (up, down, left or right)?\n")
 
-# Check the direction and display the correct message
-if direction == "up":
-    print("I am moving in an upward direction!")
-elif direction == "down":
-    print("I am moving in a downward direction!")
-elif direction == "left":
-    print("I am moving in a leftward direction!")
-elif direction == "right":
-    print("I am moving in a rightward direction!")
+# # Check the direction and display the correct message
+# if direction == "up":
+#     print("I am moving in an upward direction!")
+# elif direction == "down":
+#     print("I am moving in a downward direction!")
+# elif direction == "left":
+#     print("I am moving in a leftward direction!")
+# elif direction == "right":
+#     print("I am moving in a rightward direction!")
+# else:
+#     print("Invalid direction! Please choose up, down, left, or right.")
+
+#Task3.
+# Ask user to enter the whole number
+number = int(input("Please enter a whole number:\n"))
+# Check if number is even or odd
+if number % 2 == 0:
+    print("The number is even.")
 else:
-    print("Invalid direction! Please choose up, down, left, or right.")
+    print("The number is odd.") 
