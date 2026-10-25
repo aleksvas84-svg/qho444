@@ -38,6 +38,6 @@ hear_responce=input("What did I hear ?\n")
 see_responce=input("What did I see ?\n")
 # Check conditions of responce
 if hear_responce=="grrr" and see_responce=="two red eyes":
-    print("There is a scary creature. I hould get out of here!")
+    print("There is a scary creature. I should get out of here!")
 else:
     print("I am a little scared but I will continue.")
