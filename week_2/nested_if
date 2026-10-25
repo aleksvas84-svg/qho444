@@ -1,0 +1,19 @@
+# Program to classify books based on their cover type and binding
+
+# Ask the user for the cover type
+cover_type = input("What type of cover does the book have?\n")
+
+# Outer if-statement to check the cover type
+if cover_type == "soft":
+    # Inner (nested) if-statement for soft covers
+    is_perfect = input("Is the book perfect-bound?\n")
+    
+    if is_perfect == "yes":
+        print("\nSoft cover, perfect bound books are very popular!")
+    else:
+        print("\nSoft covers with coils or stitches are great for short books")
+
+# Handle hard covers
+elif cover_type == "hard":
+    print("\nBooks with hard covers can be more expensive!")
+
